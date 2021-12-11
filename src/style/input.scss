@@ -1,0 +1,52 @@
+.input__container {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  padding: 0 15px;
+  flex: 1;
+  height: inherit;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 22px;
+
+  letter-spacing: 2px;
+  font-family: inherit;
+  outline: 1px solid white;
+
+  transition: outline 0.2s linear;
+
+  &:focus {
+    outline: green solid 1px;
+  }
+}
+
+.input__addBtn {
+  width: 100px;
+  height: 52px;
+  border: 1px solid white;
+  border-left: 1px solid green;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 22px;
+  color: green;
+  cursor: pointer;
+  background-color: white;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  transition: background 0.2s linear, color 0.2s linear;
+  &:hover {
+    background-color: green;
+    color: white;
+  }
+
+  &:active {
+    background-color: rgb(5, 155, 5);
+  }
+}
