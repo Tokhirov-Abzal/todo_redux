@@ -14,6 +14,7 @@ const Body = () => {
   };
 
   const completeHandler = (id) => {
+     
     dispatch({ type: "TOGGLE_COMPLETE", payload: id });
   };
 

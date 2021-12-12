@@ -22,6 +22,8 @@ function addTodo(state = initialState, action) {
           todo.id === action.payload ? { ...todo, completed: true } : todo
         ),
       };
+    case "SORT_TODOS":
+      return { ...state, todos: [...action.payload] };
     default:
       return state;
   }
