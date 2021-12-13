@@ -19,7 +19,9 @@ function addTodo(state = initialState, action) {
       return {
         ...state,
         todos: state.todos.map((todo) =>
-          todo.id === action.payload ? { ...todo, completed: true } : todo
+          todo.id === action.payload
+            ? { ...todo, completed: !todo.completed }
+            : todo
         ),
       };
     case "SORT_TODOS":
